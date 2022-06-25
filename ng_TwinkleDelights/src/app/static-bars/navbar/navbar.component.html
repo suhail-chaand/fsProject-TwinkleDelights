@@ -1,0 +1,38 @@
+<nav class="navbar fixed-top navbar-dark navbar-expand-lg bg-dark">
+
+    <div class="container-fluid">
+        <div class="brand">
+            <img class="brand-logo" src="https://img.icons8.com/color/96/undefined/ruby-gemstone.png">
+            <h5 class="brand-name">Twinkle Delights</h5>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-categories" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="nav-categories">
+            <div class="navbar-nav">
+                <a class="nav-link" routerLink="/earrings">EARRINGS</a>
+                <a class="nav-link" routerLink="/necklaces">NECKLACES</a>
+                <a class="nav-link" routerLink="/rings">RINGS</a>
+                <a class="nav-link" routerLink="/bracelets">BRACELETS</a>
+            </div>
+
+            <div class="navbar-nav">
+
+                <div class="dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                        <img src="https://img.icons8.com/external-others-zufarizal-robiyanto/64/000000/external-offer-black-friday-filled-others-zufarizal-robiyanto-5.png" /> &nbsp;Coupons
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li *ngFor="let coupon of coupons"><a class="dropdown-item">{{coupon.coupon_code}}</a></li>
+                    </ul>
+                </div>
+
+                <a class="nav-link" href="#" data-bs-toggle="offcanvas" data-bs-target="#wishlist" (click)="displayWishlist()"><img src="https://img.icons8.com/color/96/000000/hearts.png" />&nbsp;Wishlist</a>
+                <a class="nav-link" href="#" data-bs-toggle="offcanvas" data-bs-target="#cart" (click)="displayCart()"><img src="https://img.icons8.com/external-flaticons-flat-flat-icons/64/000000/external-cart-web-flaticons-flat-flat-icons-2.png" />&nbsp;Cart</a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<app-cart id="cart" class="offcanvas offcanvas-end" tabindex="-1" [cartClicked]="cartClicked"></app-cart>
+<app-wishlist id="wishlist" class="offcanvas offcanvas-end" tabindex="-1" [wishlistClicked]="wishlistClicked"></app-wishlist>

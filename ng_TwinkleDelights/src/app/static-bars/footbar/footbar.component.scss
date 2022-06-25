@@ -1,0 +1,13 @@
+#footbar {
+    height: 46px;
+    background-color: #00000018;
+    border-top: #870d4e solid 2px;
+}
+
+a img {
+    height: 26px;
+    margin: 8px 6px;
+    &:hover {
+        height: 28px;
+    }
+}

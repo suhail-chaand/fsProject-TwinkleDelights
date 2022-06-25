@@ -1,0 +1,22 @@
+<div class="card mb-3">
+    <div class="row g-10 align-items-center">
+        <div class="col-md-4">
+            <img src="{{product.image}}" class="img-fluid rounded-start" alt="image">
+        </div>
+        <div class="col-md-8">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-10">
+                        <a href="#">
+                            <p class="product-name">{{product.name}}</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="price">
+                    <span class="discounted-price">&#8377;{{product.price | discount}}</span>
+                    <span class="original-price">&#8377;{{product.price}}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

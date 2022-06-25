@@ -1,0 +1,6 @@
+<div class="container">
+    <div class="back"><button type="button" class="btn btn-light" routerLink="/">&#8592;&nbsp;Back</button></div>
+    <div class="d-flex justify-content-around" *ngFor="let earring of earrings">
+        <app-product-card-horizontal [product]="earring"></app-product-card-horizontal>
+    </div>
+</div>

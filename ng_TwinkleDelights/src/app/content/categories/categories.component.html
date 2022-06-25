@@ -1,0 +1,32 @@
+<div class="d-flex justify-content-around">
+    <div class="row">
+        <div class="col">
+            <div class="row" *ngFor="let product of products">
+                <div *ngIf="product.category == 'Earring'">
+                    <app-product-card [product]="product"></app-product-card>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="row" *ngFor="let product of products">
+                <div *ngIf="product.category == 'Necklace'">
+                    <app-product-card [product]="product"></app-product-card>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="row" *ngFor="let product of products">
+                <div *ngIf="product.category == 'Ring'">
+                    <app-product-card [product]="product"></app-product-card>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="row" *ngFor="let product of products">
+                <div *ngIf="product.category == 'Bracelet'">
+                    <app-product-card [product]="product"></app-product-card>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

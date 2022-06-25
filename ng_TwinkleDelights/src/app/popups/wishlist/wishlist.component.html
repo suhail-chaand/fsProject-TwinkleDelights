@@ -1,0 +1,11 @@
+<div class="offcanvas-header">
+    <h5 class="headline">Wishlist</h5>
+    <button class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+</div>
+<div class="offcanvas-body">
+    <div class="container">
+        <div *ngFor="let product of wishlist">
+            <app-product-card-small [product]="product"></app-product-card-small>
+        </div>
+    </div>
+</div>

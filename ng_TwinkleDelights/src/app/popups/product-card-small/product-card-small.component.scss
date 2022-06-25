@@ -1,0 +1,31 @@
+@import 'src/variables';
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.card {
+    @include product-card(100%, 100%);
+    margin: 5px 0;
+}
+
+.product-name {
+    @include product-name(18px);
+}
+
+.price {
+    padding: 10px;
+    background-color: #01cccc24;
+}
+
+.discounted-price {
+    @include discounted-price(18px);
+}
+
+.original-price {
+    @include original-price(12px);
+}
+
+.btn {
+    width: 100%;
+}
