@@ -7,8 +7,8 @@
 <h2>Dashboard:</h2>
 <img src="./ng_TwinkleDelights/src/assets/screenshots/home.png">
 
-<h2>Product Details:</h2>
-<img src="./ng_TwinkleDelights/src/assets/screenshots/details.png">
+
+
 
 <h2>Products Filtered:</h2>
 <img src="./ng_TwinkleDelights/src/assets/screenshots/filtered.png">
