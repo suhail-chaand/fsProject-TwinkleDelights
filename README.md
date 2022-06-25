@@ -10,7 +10,7 @@
 <h2>Product Details:</h2>
 <img src="./ng_TwinkleDelights/src/assets/screenshots/details.png">
 
-<h2>Products Filtered</h2>
+<h2>Products Filtered:</h2>
 <img src="./ng_TwinkleDelights/src/assets/screenshots/filtered.png">
 
 <h2>Cart:</h2>
