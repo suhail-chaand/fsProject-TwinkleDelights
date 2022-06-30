@@ -1,0 +1,50 @@
+<div class="container">
+    <div class="back"><button type="button" class="back-button" routerLink="/">&#8592;&nbsp;Back</button></div>
+    <ng-container *ngIf="product">
+        <div class="card mb-3">
+            <div class="row g-10 align-items-center">
+                <div class="col-md-4">
+                    <img src="{{product.image}}" class="img-fluid rounded-start" alt="image">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-10">
+                                <p class="product-name">{{product.name}}</p>
+                            </div>
+                            <div class="col-2">
+                                <button class="wishlist" (click)="wishlist(product.id)">
+                                <img *ngIf="!in_wishlist" src="https://img.icons8.com/ios/100/000000/like--v1.png"/>
+                                <img *ngIf="in_wishlist" src="https://img.icons8.com/emoji/96/000000/heart-suit.png"/>
+                            </button>
+                            </div>
+                        </div>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{product.description}}</p>
+                        <table class="description">
+                            <tr>
+                                <th>Material:</th>
+                                <td>{{product.material}}</td>
+                            </tr>
+                            <tr>
+                                <th>Dimension:</th>
+                                <td>{{product.dimension}} &nbsp;cm</td>
+                            </tr>
+                            <tr>
+                                <th>Weight:</th>
+                                <td>{{product.weight}} &nbsp;g</td>
+                            </tr>
+                        </table>
+                        <div class="price">
+                            <span class="discounted-price">&#8377;{{product.price | discount}}</span>
+                            <span class="original-price">&#8377;{{product.price}}</span>
+                        </div>
+                        <div>
+                            <button *ngIf="!in_cart" (click)="addToCart(product.id)" type="button" class="btn btn-dark">Add to Cart</button>
+                            <button *ngIf="in_cart" (click)="addToCart(product.id)" type="button" class="btn btn-danger">Remove from Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </ng-container>
+</div>

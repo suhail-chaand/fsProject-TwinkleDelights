@@ -19,6 +19,10 @@ export class ApiService {
     return this.http.get<Product>(this.base_url + 'products_list/')
   }
 
+  getProduct(id: any): Observable<Product> {
+    return this.http.get<Product>(this.base_url + `product/${id}`)
+  }
+
   getEarrings(): Observable<Product> {
     return this.http.get<Product>(this.base_url + 'earrings/')
   }

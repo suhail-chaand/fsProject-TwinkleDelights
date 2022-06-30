@@ -11,6 +11,9 @@ import { BraceletsComponent } from './bracelets/bracelets.component';
 import { ProductCardHorizontalComponent } from './product-card-horizontal/product-card-horizontal.component';
 import { ServicesModule } from '../services/services.module';
 import { ReactiveFormsModule } from '@angular/forms';
+import { CheckoutComponent } from './checkout/checkout.component';
+import { ProductCardCheckoutComponent } from './product-card-checkout/product-card-checkout.component';
+import { ProductDetailsComponent } from './product-details/product-details.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +24,9 @@ import { ReactiveFormsModule } from '@angular/forms';
     RingsComponent,
     BraceletsComponent,
     ProductCardHorizontalComponent,
+    CheckoutComponent,
+    ProductCardCheckoutComponent,
+    ProductDetailsComponent,
   ],
   imports: [
     CommonModule,
@@ -35,6 +41,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     RingsComponent,
     BraceletsComponent,
     ProductCardComponent,
+    CheckoutComponent,
+    ProductDetailsComponent,
   ]
 })
 export class ContentModule { }

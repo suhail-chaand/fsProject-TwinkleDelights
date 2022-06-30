@@ -1,9 +1,4 @@
 @import 'src/variables';
-a {
-    color: black;
-    text-decoration: none;
-}
-
 .card {
     @include product-card(100%, 100%);
     margin: 5px 0;

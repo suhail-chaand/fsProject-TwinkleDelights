@@ -1,4 +1,18 @@
 @import 'src/variables';
+.container {
+    padding: 100px 0 40px 0;
+}
+
+.back {
+    border-bottom: 1px solid grey;
+}
+
+.back-button {
+    padding: 6px;
+    background-color: transparent;
+    border: none;
+}
+
 .card {
     @include product-card(100%, 100%);
 }

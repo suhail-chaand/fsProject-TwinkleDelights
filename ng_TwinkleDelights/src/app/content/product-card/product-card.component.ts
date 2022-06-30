@@ -1,7 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 import { ApiService } from 'src/app/services/api.service';
-import { ProductCardHorizontalComponent } from '../product-card-horizontal/product-card-horizontal.component';
 
 @Component({
   selector: 'app-product-card',
@@ -43,5 +43,4 @@ export class ProductCardComponent implements OnInit {
       this.api.updateCart(id, { in_cart: true }).subscribe()
     }
   }
-
 }

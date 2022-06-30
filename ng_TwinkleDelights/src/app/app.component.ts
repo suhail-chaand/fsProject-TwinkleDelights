@@ -9,27 +9,8 @@ import { Router } from '@angular/router';
 export class AppComponent {
   title = 'ng_TwinkleDelights';
 
-  constructor(private router: Router) {
+  constructor() {
 
   }
 
-  isCategories(path: string): boolean {
-    return this.router.url == path
-  }
-
-  isEarrings(path: string): boolean {
-    return this.router.url.includes(path)
-  }
-
-  isNecklaces(path: string): boolean {
-    return this.router.url.includes(path)
-  }
-
-  isRings(path: string): boolean {
-    return this.router.url.includes(path)
-  }
-
-  isBracelets(path: string): boolean {
-    return this.router.url.includes(path)
-  }
 }

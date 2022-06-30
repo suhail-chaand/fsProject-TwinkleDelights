@@ -1,0 +1,54 @@
+.body {
+    padding: 75px 0 40px 0;
+}
+
+.back {
+    border-bottom: 1px solid grey;
+}
+
+.btn {
+    background-color: transparent;
+    border: none;
+}
+
+.products {
+    height: 75vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+form {
+    height: fit-content;
+    margin: 40px 20px;
+    padding: 10px 10px 0 10px;
+    border-radius: 10px;
+    background-color: #dee2e6;
+}
+
+th {
+    min-width: 140px;
+}
+
+input {
+    max-width: 120px;
+    background-color: transparent;
+    color: black;
+    border: none;
+    text-align: right;
+}
+
+select {
+    background-color: transparent;
+    border: none;
+    &:focus {
+        box-shadow: none;
+    }
+}
+
+td {
+    text-align: right;
+}
+
+.final_price {
+    font-weight: bold;
+}

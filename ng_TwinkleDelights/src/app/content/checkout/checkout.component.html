@@ -1,0 +1,42 @@
+<div class="container body">
+    <div class="back"><button type="button" class="btn btn-light" routerLink="/">&#8592;&nbsp;Back</button></div>
+    <div class="row gx-4">
+        <div class="col">
+            <div class="products">
+                <div *ngFor="let product of cart">
+                    <app-product-card-checkout [product]="product"></app-product-card-checkout>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <form [formGroup]="priceForm">
+                <h4>Order summary</h4>
+                <table class="table">
+                    <tbody>
+                        <tr>
+                            <th>Cart value (&#8377;)</th>
+                            <td>{{cart_value}}</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <select class="form-select form-select-sm" formControlName="coupon_code">
+                                                <option selected>Select Coupon</option>
+                                                <option *ngFor="let coupon of coupon_codes">{{coupon}}</option>
+                                    </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Total Savings (&#8377;)</th>
+                            <td><input formControlName="total_savings"></td>
+                        </tr>
+                        <tr>
+                            <th>ORDER TOTAL (&#8377;)</th>
+                            <td><input class="final_price" formControlName="final_price"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </form>
+        </div>
+    </div>
+</div>

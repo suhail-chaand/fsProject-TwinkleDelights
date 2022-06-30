@@ -7,6 +7,9 @@
 <h2>Dashboard:</h2>
 <img src="./ng_TwinkleDelights/src/assets/screenshots/home.png">
 
+<h2>Product Details:</h2>
+<img src="./ng_TwinkleDelights/src/assets/screenshots/details.png">
+
 <h2>Products Filtered:</h2>
 <img src="./ng_TwinkleDelights/src/assets/screenshots/filtered.png">
 
@@ -15,6 +18,9 @@
 
 <h2>Wishlist:</h2>
 <img src="./ng_TwinkleDelights/src/assets/screenshots/wishlist.png">
+
+<h2>Checkout:</h2>
+<img src="./ng_TwinkleDelights/src/assets/screenshots/checkout.png">
 
 <h3>Django REST installations:</h3>
 <ul>

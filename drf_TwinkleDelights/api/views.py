@@ -9,6 +9,13 @@ class ProductsListView(generics.ListAPIView):
     queryset = Product.objects.all()
     serializer_class = ProductsSerializer
 
+class ProductView(generics.RetrieveAPIView):
+    serializer_class =ProductsSerializer
+
+    def get_queryset(self):
+        product_id = self.kwargs['pk']
+        return Product.objects.filter(id=product_id)
+
 class UpdateWishlistView(generics.UpdateAPIView):
     serializer_class = UpdateWishlistSerializer
 

@@ -10,12 +10,12 @@ export class ProductCardHorizontalComponent implements OnInit {
 
   constructor(private api: ApiService) { }
 
+  @Input() product: any
+
   ngOnInit(): void {
     this.in_wishlist = this.product.in_wishlist
     this.in_cart = this.product.in_cart
   }
-
-  @Input() product: any
 
   in_wishlist: any
   in_cart: any
